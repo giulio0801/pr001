@@ -6,11 +6,14 @@ public class Elenco {
     private int pos;
     private boolean isInt; //true  x interi , false x le strighe
 
+    public Elenco(){
+        this(1,false);
+    }
+
     public Elenco(int lunghezza, boolean numerica){
         this.db=new String[lunghezza];
         this.pos=0;
         this.isInt=numerica;
-
     }
 
     public boolean addItem(String item){
