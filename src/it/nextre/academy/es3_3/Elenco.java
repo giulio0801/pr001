@@ -24,8 +24,18 @@ public class Elenco {
             this.db[pos]=item;
             pos++;
             return true;
+        }else{
+            //ingrandisco il mio elenco dinamicamente
+            String[] dbnew = new String[this.db.length + 1];
+            for(int i=0;i<this.db.length;i++){
+                dbnew[i]=this.db[i];
+            }
+            dbnew[this.db.length]=item;
+            this.db=dbnew;
+            pos++;
+            return true;
         }
-        return false;
+        //return false;
 
 
 

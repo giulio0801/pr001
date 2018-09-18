@@ -2,6 +2,7 @@ package it.nextre.academy.palindroma;
 
 public class AppPal {
 
+
     public static void main(String[] args) {
 
 
