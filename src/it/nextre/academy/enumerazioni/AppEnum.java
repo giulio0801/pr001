@@ -2,7 +2,7 @@ package it.nextre.academy.enumerazioni;
 
 public class AppEnum {
 
-    enum Formati {CSV,TXT};
+    enum Formati {CSV,TXT,PNG,PDF};
 
     public static void main(String[] args) {
 
@@ -30,6 +30,8 @@ public class AppEnum {
         test(null);
 
         if (formatoFile==Formati.CSV){}
+
+        System.out.println(formatoFile.ordinal());
 
 
 

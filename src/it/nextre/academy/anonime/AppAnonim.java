@@ -1,5 +1,7 @@
 package it.nextre.academy.anonime;
 
+import it.nextre.academy.ereditarieta.Persona;
+
 @FunctionalInterface
 interface myInterface{
     public void doStuff(int x);
@@ -40,6 +42,14 @@ public class AppAnonim {
         });
 
 
+
+
+        Persona p = new Persona(){
+            @Override
+            public String getCognome() {
+                return "riservato";
+            }
+        };
 
 
 
